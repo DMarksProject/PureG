@@ -3,6 +3,8 @@
     line-height: 1.8;
     color: #818181;
   }
+
+
   h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -17,26 +19,123 @@
     font-weight: 400;
     margin-bottom: 30px;
   }  
-  .jumbotron {
-    background-color: #66CCFF;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+
+  .navbar {
+    margin-bottom: 0;
+    padding-bottom: 1%;
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Muli, sans-serif;
   }
+  .navbar-fixed-top { 
+    background-color: rgba(153, 221, 255,1);
+    transition: background-color 0.5s ease 0s;
+    padding-top: 1.5%;
+  }
+  .navbar-fixed-top.opaque { 
+    background-color: rgba(153, 221, 255,1);
+    transition: background-color 0.5s ease 0s;
+  }
+
+  .dropdown-menu {
+    background-color: rgba(153, 221, 255,1);
+  }
+  
+  .navbar-brand {
+    padding-top: 0.5%;
+    margin-bottom: 4%;
+  }
+
+  .navbar li a, .navbar .navbar-brand .dropdown-menu {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a .dropdown-menu  {
+    color: #99ddff !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+
+  .jumbotron {
+    background-color: #99ddff;
+    background-image: url("images/architecture-building-amsterdam-blue-sky-162539.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -50;
+    width: 100%;
+    height: 450px;
+    color: #380096;
+    padding: 90px 0px 10px 0px;
+    font-family: Muli, sans-serif;
+    
+  }
+
+  .layer {
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(255, 255, 255, 0.6); /* Black background with 0.5 opacity */
+    color: #380096;
+    width: 40%;
+    height: inherit;
+    padding: 35px 5px;
+    margin: 0 30%;
+  }
+
+  .layer img {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .layer {
+      width: 70%;
+      margin: 0 15%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .layer {
+      width: 80%;
+      margin: 0 10%;
+    }
+    
+    .layer img {
+      width: 75%;
+    }
+  }
+
+  .panel-body {
+    width: 100%;
+  }
+
+  .btn {
+    border-radius: 0px;
+  }
+
   .container-fluid {
-    padding: 60px 50px;
+    padding: 30px 50px;
   }
   .bg-grey {
     background-color: #f6f6f6;
   }
+
+
   .logo-small {
-    color: #66CCFF;
-    font-size: 50px;
+    color: #99ddff;
+    font-size: 80px;
+    padding-bottom: 3%;
   }
   .logo {
-    color: #66CCFF;
+    color: #99ddff;
     font-size: 200px;
+    padding-bottom: 3%;
   }
+
+
   .thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -49,13 +148,13 @@
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #66CCFF;
+    color: #99ddff;
   }
   .carousel-indicators li {
-    border-color: #66CCFF;
+    border-color: #99ddff;
   }
   .carousel-indicators li.active {
-    background-color: #66CCFF;
+    background-color: #99ddff;
   }
   .item h4 {
     font-size: 19px;
@@ -68,7 +167,7 @@
     font-style: normal;
   }
   .panel {
-    border: 1px solid #66CCFF; 
+    border: 1px solid #99ddff; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
   }
@@ -76,13 +175,13 @@
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-    border: 1px solid #66CCFF;
+    border: none;
     background-color: #fff !important;
-    color: #66CCFF;
+    color: #99ddff;
   }
   .panel-heading {
     color: #fff !important;
-    background-color: #66CCFF !important;
+    background-color: #99ddff !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -102,53 +201,61 @@
   }
   .panel-footer .btn {
     margin: 15px 0;
-    background-color: #66CCFF;
+    background-color: #99ddff;
     color: #fff;
+    border-radius: 0px;
   }
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-    .col-sm-5 {
-        text-align: center;
-        margin: 25px 0;
-    }
-    .col-sm-3 {
-        text-align: center;
-        margin: 25px 0;
-    }
-    .col-sm-2 {
-        text-align: center;
-        margin: 25px 0;
-    }
 
-  .navbar {
-    margin-bottom: 0;
-    background-color: #66CCFF;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
+  .list-group {
+    
+    top: 20%;
+    padding: 2px;
+    margin-bottom: 2%;
   }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+
+  .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
   }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #66CCFF !important;
-    background-color: #fff !important;
+  .col-sm-5 {
+      text-align: center;
+      margin: 25px 0;
   }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
+  .col-sm-3 {
+      text-align: center;
+      margin: 25px 0;
   }
+  .col-sm-2 {
+      text-align: center;
+      margin: 25px 0;
+  }
+  .col-sm-6 {
+      text-align: center;
+      margin: 25px 0;
+  }
+
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #66CCFF;
+    color: #99ddff;
   }
+
   .slideanim {visibility:hidden;}
   .slide {
     animation-name: slide;
@@ -200,3 +307,23 @@
       font-size: 150px;
     }
   }
+
+#myUL {
+  list-style-type: none;
+}
+
+#myUL li a {
+  text-decoration: none;
+}
+
+.affix {
+  top: 20px;
+  z-index: 9999 !important;
+}
+
+div.col-sm-9 div {
+  height: 250px;
+  font-size: 28px;
+}
+
+
